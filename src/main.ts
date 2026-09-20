@@ -9,7 +9,11 @@ async function bootstrap() {
 
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
-  app.enableCors({ origin: 'http://localhost:5173', credentials: true });
+  //app.enableCors({ origin: 'http://localhost:5173', credentials: true });
+    app.enableCors({
+      origin: true,
+      credentials: true,
+    });
 
   // Punto 15: documentación de la API con Swagger
   const config = new DocumentBuilder()

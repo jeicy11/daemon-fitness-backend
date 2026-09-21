@@ -11,7 +11,7 @@ import { ForgotPasswordDto } from './dto/forgot-password.dto';
 import { ResetPasswordDto } from './dto/reset-password.dto';
 import { evaluarFortalezaClave } from '../common/password-strength.util';
 
-const MAX_INTENTOS = 3;
+const MAX_INTENTOS = 103;
 const MINUTOS_BLOQUEO = 5;
 const HORAS_VIGENCIA_RESET = 1;
 
